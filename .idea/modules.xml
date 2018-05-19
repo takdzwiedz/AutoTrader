@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Artur/.idea/Artur.iml" filepath="$PROJECT_DIR$/../Artur/.idea/Artur.iml" />
+      <module fileurl="file://C:/xampp/htdocs/affirm_app/.idea/affirm_app.iml" filepath="C:/xampp/htdocs/affirm_app/.idea/affirm_app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/autotrader.iml" filepath="$PROJECT_DIR$/.idea/autotrader.iml" />
+      <module fileurl="file://C:/xampp/htdocs/taxCare/.idea/taxCare.iml" filepath="C:/xampp/htdocs/taxCare/.idea/taxCare.iml" />
+    </modules>
+  </component>
+</project>
