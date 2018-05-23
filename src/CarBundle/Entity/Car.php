@@ -35,6 +35,47 @@ class Car
      */
     private $make;
 
+    /**
+     * @var float
+     *
+     * @ORM\Column(name="price", type="decimal", scale=2)
+     */
+
+    private $price;
+
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="year", type="integer")
+     */
+
+    private $year;
+
+    /**
+     * $var string
+     *
+     * @ORM\Column(name="description", type="text", nullable=true)
+     */
+
+    private $description;
+
+    /**
+     * @return string
+     */
+    public function getDescription()
+    {
+        return $this->description;
+    }
+
+    /**
+     * @param string $description
+     */
+    public function setDescription($description): void
+    {
+        $this->description = $description;
+    }
+
 
     /**
      * Get id
@@ -93,5 +134,52 @@ class Car
     {
         return $this->make;
     }
-}
 
+    /**
+     * Set price
+     *
+     * @param string $price
+     *
+     * @return Car
+     */
+    public function setPrice($price)
+    {
+        $this->price = $price;
+
+        return $this;
+    }
+
+    /**
+     * Get price
+     *
+     * @return string
+     */
+    public function getPrice()
+    {
+        return $this->price;
+    }
+
+    /**
+     * Set year
+     *
+     * @param integer $year
+     *
+     * @return Car
+     */
+    public function setYear($year)
+    {
+        $this->year = $year;
+
+        return $this;
+    }
+
+    /**
+     * Get year
+     *
+     * @return integer
+     */
+    public function getYear()
+    {
+        return $this->year;
+    }
+}
