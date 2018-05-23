@@ -53,6 +53,14 @@ class Car
     private $year;
 
     /**
+     * @var boolean
+     *
+     * @ORM\Column(name="navigation", type="boolean")
+     */
+
+    private $navigation;
+
+    /**
      * $var string
      *
      * @ORM\Column(name="description", type="text", nullable=true)
@@ -181,5 +189,29 @@ class Car
     public function getYear()
     {
         return $this->year;
+    }
+
+    /**
+     * Set navigation
+     *
+     * @param boolean $navigation
+     *
+     * @return Car
+     */
+    public function setNavigation($navigation)
+    {
+        $this->navigation = $navigation;
+
+        return $this;
+    }
+
+    /**
+     * Get navigation
+     *
+     * @return boolean
+     */
+    public function getNavigation()
+    {
+        return $this->navigation;
     }
 }
