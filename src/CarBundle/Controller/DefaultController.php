@@ -12,9 +12,9 @@ class DefaultController extends Controller
      */
     public function indexAction()
     {
-        $carRepository =$this->getDoctrine()->getRepository('CarBundle:Car');
-        $cars = $carRepository->findAll();
-        return $this->render('CarBundle:Default:index.html.twig', ['cars'=>$cars]);
+        $carRepository = $this->getDoctrine()->getRepository('CarBundle:Car');
+        $cars = $carRepository->findCarsWithDetails();
+        return $this->render('CarBundle:Default:index.html.twig', ['cars' => $cars]);
     }
 
     /**
@@ -23,9 +23,10 @@ class DefaultController extends Controller
      * @return \Symfony\Component\HttpFoundation\Response
      */
 
-    public function showAction($id){
+    public function showAction($id)
+    {
         $carRepository = $this->getDoctrine()->getRepository('CarBundle:Car');
-        $car = $carRepository->find($id);
-        return $this->render('CarBundle:Default:show.html.twig',['car' => $car]);
+        $car = $carRepository->findCarWithDetailsById($id);
+        return $this->render('CarBundle:Default:show.html.twig', ['car' => $car]);
     }
 }

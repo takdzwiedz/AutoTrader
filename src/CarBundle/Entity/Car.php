@@ -24,14 +24,14 @@ class Car
     /**
      * @var Model
      *
-     * @ORM\ManyToOne(targetEntity="CarBundle\Entity\Model", inversedBy="Cars")
+     * @ORM\ManyToOne(targetEntity="CarBundle\Entity\Model", inversedBy="cars")
      */
     private $model;
 
     /**
      * @var Make
      *
-     * @ORM\ManyToOne(targetEntity="CarBundle\Entity\Make", inversedBy="Cars")
+     * @ORM\ManyToOne(targetEntity="CarBundle\Entity\Make", inversedBy="cars")
      */
     private $make;
 
