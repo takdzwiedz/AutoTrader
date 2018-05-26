@@ -24,7 +24,7 @@ class Car
     /**
      * @var Model
      *
-     * @ORM\ManyToOne(targetEntity="CarBundle\Entity\Make", inversedBy="Cars")
+     * @ORM\ManyToOne(targetEntity="CarBundle\Entity\Model", inversedBy="Cars")
      */
     private $model;
 

@@ -2,6 +2,7 @@
 
 namespace CarBundle\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -31,7 +32,7 @@ class Model
     /**
      * @var ArrayCollection
      *
-     * @ORM\OneToMany(targetEntity="CarBundle\Entity\Car", mappedBy="mmodel")
+     * @ORM\OneToMany(targetEntity="CarBundle\Entity\Car", mappedBy="model")
      */
 
     private $cars;
