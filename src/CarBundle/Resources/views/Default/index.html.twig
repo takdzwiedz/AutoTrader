@@ -9,6 +9,7 @@
         {{ form_start(form, { attr: { class: 'form-inline'} }) }}
         {{ form_widget(form.search, {attr: {placeholder: 'Search'}}) }}
         <button type="submit" class="btn">Search</button>
+        {{ form_errors(form.search) }}
         {{ form_end(form) }}
         <br>
     </div>
